@@ -8,6 +8,9 @@ h1 {
   line-height: 1.5;
   color: white;
 }
+#title {
+  background-color: #ff4c68;
+}
 /*navigation bar*/
 .navbar {
   padding: 0 0 4.5rem 0;
@@ -36,6 +39,9 @@ h1 {
   transform: rotate(30deg);
 }
 /*Features*/
+#features {
+  padding: 8% 12%;
+}
 .feature-item {
   padding: 0 4%;
   margin: 0 auto;
@@ -58,9 +64,44 @@ h1 {
   color: #8f8f8f;
 }
 
-#title {
+/*Testimonials*/
+#testimonials {
+  text-align: center;
   background-color: #ff4c68;
+  color: #ffffff;
 }
-#features {
-  padding: 8% 12%;
+h2 {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+.testimonial-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+.carousel-item {
+  padding: 7% 15%;
+}
+
+/*Press*/
+#press {
+  background-color: #ff4c68;
+  text-align: center;
+  padding-bottom: 3%;
+}
+.press-image {
+  width: 15%;
+  margin: 20px 20px 20px 50px;
+}
+
+/*Pricing*/
+#pricing {
+  padding: 100px;
+}
+
+.pricing-col {
+  padding: 3% 2%;
+  text-align: center;
 }
