@@ -1,16 +1,26 @@
 body {
   font-family: 'Montserrat', sans-serif;
+  text-align: center;
 }
-h1 {
+h1,h2,h3,h4,h5,h6 {
   font-family: 'Montserrat', sans-serif;
+}
+p {
+  color: #8f8f8f;
+}
+
+/*Headings*/
+.big-heading {
   font-weight: 900;
   font-size: 3.5rem;
   line-height: 1.5;
   color: white;
 }
-#title {
-  background-color: #ff4c68;
+.section-heading {
+  line-height: 1.5;
+  font-weight: 700;
 }
+
 /*navigation bar*/
 .navbar {
   padding: 0 0 4.5rem 0;
@@ -26,26 +36,42 @@ h1 {
   font-size: 1.2rem;
 }
 
-.container-fluid {
-  padding: 3% 15%;
+/*Sections*/
+.colored-section {
+  background-color: #ff4c68;
+  color: #ffffff;
+}
+.white-section {
+  background-color: #ffffff;
 }
 
+/*Title*/
+#title {
+  text-align: left;
+}
+.container-fluid {
+  padding: 3% 15% 7%;
+}
 .download-button {
   margin: 5% 3% 5% 0;
 }
-
 .phone {
   width: 60%;
-  transform: rotate(30deg);
+  transform: rotate(25deg);
+  position: absolute;
+  z-index: 1;
+  right: 25%;
 }
+
 /*Features*/
 #features {
   padding: 8% 12%;
+  position: relative;
+  z-index: 2;
 }
 .feature-item {
   padding: 0 4%;
   margin: 0 auto;
-  text-align: center;
 }
 .feature-icon {
   font-size: 5rem;
@@ -56,22 +82,12 @@ h1 {
   color: #ff4c68;
 }
 .feature-title {
-  font-family: 'Montserrat';
-  font-weight: 700;
   font-size: 1.5rem;
-}
-.feature-desc {
-  color: #8f8f8f;
+  font-weight: 700;
 }
 
 /*Testimonials*/
-#testimonials {
-  text-align: center;
-  background-color: #ff4c68;
-  color: #ffffff;
-}
-h2 {
-  font-family: 'Montserrat';
+.testimonial-text {
   font-weight: 700;
   font-size: 3rem;
   line-height: 1.5;
@@ -87,8 +103,6 @@ h2 {
 
 /*Press*/
 #press {
-  background-color: #ff4c68;
-  text-align: center;
   padding-bottom: 3%;
 }
 .press-image {
@@ -100,8 +114,30 @@ h2 {
 #pricing {
   padding: 100px;
 }
-
 .pricing-col {
   padding: 3% 2%;
-  text-align: center;
+}
+
+/*Call to action*/
+#cta {
+  padding: 8% 12% 5%;
+}
+
+/*Footer*/
+#footer {
+  padding: 8%;
+  line-height: 3rem;
+}
+.footer-icon {
+  padding: 10px;
+}
+
+@media (max-width:1028px) {
+  .phone {
+    position: static;
+    transform: rotate(0deg);
+  }
+  #title {
+    text-align: center;
+  }
 }
